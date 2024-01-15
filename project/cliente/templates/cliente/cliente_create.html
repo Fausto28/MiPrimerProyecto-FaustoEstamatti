@@ -6,7 +6,7 @@
     <h3>Cliente: Crear</h3>
 
     <form method="post">
-        {% csrf_token %}
+        {% csrf_token %} {#Encripta la información#}
         {{ form.as_p }}
 
         <button type="submit">Guardar</button>
