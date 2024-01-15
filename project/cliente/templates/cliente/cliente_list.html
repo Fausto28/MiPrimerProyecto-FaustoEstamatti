@@ -2,14 +2,15 @@
 
 
 {% block content %}
-    <h2>CLIENTE</h2>
-    <h3>Cliente: Lista</h3>
+    <h2>CLIENTES</h2>
+    <h3>Listado de clientes:</h3>
 
-    <table border="1">
+    <table border="7">
         <thead>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Nacimiento</th>
+            <th>Automóvil</th>
         </thead>
         <tbody>
             {% for cliente in clientes %}
@@ -18,6 +19,11 @@
                     <td>{{ cliente.apellido }}</td>
                     {% if cliente.nacimiento %}
                         <td>{{ cliente.nacimiento }}</td>
+                    {% else %}
+                        <td>Sin registro</td>
+                    {% endif %}
+                    {% if cliente.automovil %}
+                        <td>{{ cliente.automovil }}</td>
                     {% else %}
                         <td>Sin registro</td>
                     {% endif %}
