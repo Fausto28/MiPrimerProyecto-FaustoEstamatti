@@ -9,10 +9,6 @@
 
 ## Pasos para ejecutar el proyecto.
 
-- Link de GitHub: 
+- Link de GitHub: https://github.com/Fausto28/MiPrimerProyecto-FaustoEstamatti.git
 - Creación del entorno virtual 
 - Instalar las dependencias con pip requirements
-- Cómo ejecutar el servidor
-'''
-
-'''
